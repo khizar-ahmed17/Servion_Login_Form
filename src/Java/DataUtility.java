@@ -2,26 +2,12 @@ package Java;
 
 public class DataUtility 
 {
-	public String name;
-	public String password;
-	
-	public String getName()
-	{
-		return name;
-	}
-	public void setName(String name)
-	{
-		this.name = name;
-	}
-	public String getPassword() 
-	{
-		return password;
-	}
-	public void setPassword(String password)
-	{
-		this.password = password;
-	}
-	
-	
 
+	public static String name;
+	public static String password;
+	public static void setData(String uname,String upassword)
+	{
+		name=uname;
+		password=upassword;
+	}
 }
