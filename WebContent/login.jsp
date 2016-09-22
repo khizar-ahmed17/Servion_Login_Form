@@ -6,11 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body><form action="login" >  
-  
-Name:<input type="text" name="name"/><br/><br/>  
-Password:<input type="password" name="password"/><br/><br/>    
-<input type="submit" value="login"/>
-</form>
+<body>
+<%@include  file="pages/loginPage.html" %>
 </body>
 </html>

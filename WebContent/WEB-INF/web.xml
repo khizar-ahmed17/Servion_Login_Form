@@ -13,12 +13,16 @@
     <description></description>
     <display-name>JavaServlet</display-name>
     <servlet-name>JavaServlet</servlet-name>
-    <servlet-class>Servlet.JavaServlet</servlet-class>
+    <servlet-class>webservlet.JavaServlet</servlet-class>
+    <init-param>
+    <param-name>path</param-name>
+    <param-value>/WEB-INF/config.properties</param-value>
+    </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>JavaServlet</servlet-name>
     <url-pattern>/JavaServlet</url-pattern> 
     <url-pattern>/login</url-pattern>
-    <url-pattern>/register</url-pattern>
+    
   </servlet-mapping>
 </web-app>

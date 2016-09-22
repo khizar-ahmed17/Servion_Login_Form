@@ -1,4 +1,4 @@
-package Java;
+package webpack;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

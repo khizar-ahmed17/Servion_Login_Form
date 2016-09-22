@@ -1,4 +1,4 @@
-package Java;
+package webpack;
 
 public class DataUtility 
 {
