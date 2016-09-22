@@ -49,7 +49,7 @@ public class LoginAction extends Action
 				}
 				else
 				{
-					return "login.already";
+					return "login.success";
 					
 					//already logged in
 				}
@@ -59,7 +59,8 @@ public class LoginAction extends Action
 				return "login.error";
 				//password error
 		}
-		
+
+		request.setAttribute("msg", "User Not Found");
 		return "login.register";
 		//user not found
 	}

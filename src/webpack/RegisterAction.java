@@ -34,8 +34,10 @@ public class RegisterAction extends Action
 		if(checkUserExists(name))
 		{
 			setPassword(name,password);
+
 			return "login.dologin";
 		}
+		request.setAttribute("msg", "User Already Exists");
 		return "login.register";
 	}
 	

@@ -7,6 +7,23 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@include  file="pages/register.html" %>
+</body>
+	<div align="center">
+	<%
+    	Object value = request.getAttribute("msg");
+	if(value==null)
+	{
+		value="";
+	}
+	%>
+	
+	<h3 style="color:white">
+	<i>
+		<%=value %>
+	</i>
+	</h3>
+	</div>
+	
+	<%@include  file="pages/register.html" %>
 </body>
 </html>

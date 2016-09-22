@@ -8,5 +8,20 @@
 </head>
 <body>
 <%@include file="pages/welcome.html" %>
+<div align="center">
+	<%
+    	Object value = request.getAttribute("Name");
+	if(value==null)
+	{
+		value="";
+	}
+	%>
+	
+	<h1 style="color:white">
+	Welcome<i>
+		<%=value %>
+	</i>
+	</h1>
+	</div>
 </body>
 </html>

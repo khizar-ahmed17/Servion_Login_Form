@@ -6,7 +6,6 @@ import java.util.Properties;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -61,9 +60,11 @@ public class JavaServlet extends HttpServlet
 			classObj = (Class<Action>) Class.forName(prop.getProperty(actionString));
 			action = (Action) classObj.newInstance();
 			String result=action.execute(request, response);
-			
+
+			request.setAttribute("Name", request.getParameter("name"));
 			RequestDispatcher rd=request.getRequestDispatcher(prop.getProperty(result));  
-	        rd.include(request, response); 
+			rd.include(request, response); 
+	        
        }
 		catch(Exception e)
 		{
